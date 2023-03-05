@@ -1,0 +1,259 @@
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th id="">Integer 1</th>
+        <th id="">Integer 2</th>
+        <th id="">Sum of 1 and 2</th>
+    
+    </tr>
+    
+        <tr>
+            <td id="num1_1">4</td>
+            <td id="num2_1">6</td>
+            <td id="sum_1"></td>
+        </tr>
+        <tr>
+            <td id="num1_2">14</td>
+            <td id="num2_2">5</td>
+            <td id="sum_2"></td>
+        </tr>
+        <tr>
+            <td id="num1_3">11</td>
+            <td id="num2_3">8</td>
+            <td id="sum_3"></td>
+        </tr>
+        <tr>
+            <td id="num1_4">4</td>
+            <td id="num2_4">6</td>
+            <td id="sum_4"></td>
+        </tr>
+        <tr>
+            <td id="num1_5">14</td>
+            <td id="num2_5">5</td>
+            <td id="sum_5"></td>
+        </tr>
+        <tr>
+            <td id="num1_6">11</td>
+            <td id="num2_6">8</td>
+            <td id="sum_6"></td>
+        </tr>
+        <tr>
+            <td id="num1_7">4</td>
+            <td id="num2_7">6</td>
+            <td id="sum_7"></td>
+        </tr>
+        <tr>
+            <td id="num1_8">14</td>
+            <td id="num2_8">5</td>
+            <td id="sum_8"></td>
+        </tr>
+        <tr>
+            <td id="num1_9">11</td>
+            <td id="num2_9">8</td>
+            <td id="sum_9"></td>
+        </tr>
+        <tr>
+            <td id="num1_10">4</td>
+            <td id="num2_10">6</td>
+            <td id="sum_10"></td>
+        </tr>
+        <tr>
+            <td id="num1_11">14</td>
+            <td id="num2_11">5</td>
+            <td id="sum_11"></td>
+        </tr>
+        <tr>
+            <td id="num1_12">11</td>
+            <td id="num2_12">8</td>
+            <td id="sum_12"></td>
+        </tr>
+        <tr>
+            <td id="num1_13">11</td>
+            <td id="num2_13">8</td>
+            <td id="sum_13"></td>
+        </tr>
+        <tr>
+            <td id="num1_14">4</td>
+            <td id="num2_14">6</td>
+            <td id="sum_14"></td>
+        </tr>
+        <tr>
+            <td id="num1_15">14</td>
+            <td id="num2_15">5</td>
+            <td id="sum_15"></td>
+        </tr>
+        <tr>
+            <td id="num1_16">11</td>
+            <td id="num2_16">8</td>
+            <td id="sum_16"></td>
+        </tr>
+        <tr>
+            <td id="num1_17">4</td>
+            <td id="num2_17">6</td>
+            <td id="sum_17"></td>
+        </tr>
+        <tr>
+            <td id="num1_18">14</td>
+            <td id="num2_18">5</td>
+            <td id="sum_18"></td>
+        </tr>
+        <tr>
+            <td id="num1_19">11</td>
+            <td id="num2_19">8</td>
+            <td id="sum_19"></td>
+        </tr>
+        <tr>
+            <td id="num1_20">11</td>
+            <td id="num2_20">8</td>
+            <td id="sum_20"></td>
+        </tr>
+  
+</table>
+<script>
+    const num1_1 = document.getElementById("num1_1");
+    const num1_2 = document.getElementById('num1_2');
+    const num1_3 = document.getElementById('num1_3');
+    const num1_4 = document.getElementById('num1_4');
+    const num1_5 = document.getElementById('num1_5');
+    const num1_6 = document.getElementById('num1_6');
+    const num1_7 = document.getElementById('num1_7');
+    const num1_8 = document.getElementById('num1_8');
+    const num1_9 = document.getElementById('num1_9');
+    const num1_10 = document.getElementById('num1_10');
+    const num1_11 = document.getElementById('num1_11');
+    const num1_12 = document.getElementById('num1_12');
+    const num1_13 = document.getElementById('num1_13');
+    const num1_14 = document.getElementById('num1_14');
+    const num1_15 = document.getElementById('num1_15');
+    const num1_16 = document.getElementById('num1_16');
+    const num1_17 = document.getElementById('num1_17');
+    const num1_18 = document.getElementById('num1_18');
+    const num1_19 = document.getElementById('num1_19');
+    const num1_20 = document.getElementById('num1_20');
+
+    const num2_1 = document.getElementById('num2_1');
+    const num2_2 = document.getElementById('num2_2');
+    const num2_3 = document.getElementById('num2_3');
+    const num2_4 = document.getElementById('num2_4');
+    const num2_5 = document.getElementById('num2_5');
+    const num2_6 = document.getElementById('num2_6');
+    const num2_7 = document.getElementById('num2_7');
+    const num2_8 = document.getElementById('num2_8');
+    const num2_9 = document.getElementById('num2_9');
+    const num2_10 = document.getElementById('num2_10');
+    const num2_11 = document.getElementById('num2_11');
+    const num2_12 = document.getElementById('num2_12');
+    const num2_13 = document.getElementById('num2_13');
+    const num2_14 = document.getElementById('num2_14');
+    const num2_15 = document.getElementById('num2_15');
+    const num2_16 = document.getElementById('num2_16');
+    const num2_17 = document.getElementById('num2_17');
+    const num2_18 = document.getElementById('num2_18');
+    const num2_19 = document.getElementById('num2_19');
+    const num2_20 = document.getElementById('num2_20');
+
+    const sum_1 = document.getElementById('sum_1');
+    const sum_2 = document.getElementById('sum_2');
+    const sum_3 = document.getElementById('sum_3');
+    const sum_4 = document.getElementById('sum_4');
+    const sum_5 = document.getElementById('sum_5');
+    const sum_6 = document.getElementById('sum_6');
+    const sum_7 = document.getElementById('sum_7');
+    const sum_8 = document.getElementById('sum_8');
+    const sum_9 = document.getElementById('sum_9');
+    const sum_10 = document.getElementById('sum_10');
+    const sum_11 = document.getElementById('sum_11');
+    const sum_12 = document.getElementById('sum_12');
+    const sum_13 = document.getElementById('sum_13');
+    const sum_14 = document.getElementById('sum_14');
+    const sum_15 = document.getElementById('sum_15');
+    const sum_16 = document.getElementById('sum_16');
+    const sum_17 = document.getElementById('sum_17');
+    const sum_18 = document.getElementById('sum_18');
+    const sum_19 = document.getElementById('sum_19');
+    const sum_20 = document.getElementById('sum_20');
+
+        let num11=Number(num1_1.textContent);
+        let num21=Number(num2_1.textContent);
+        let num12=Number(num1_2.textContent);
+        let num22=Number(num2_2.textContent);
+        let num13=Number(num1_3.textContent);
+        let num23=Number(num2_3.textContent);
+        let num14=Number(num1_4.textContent);
+        let num24=Number(num2_4.textContent);
+        let num15=Number(num1_5.textContent);
+        let num25=Number(num2_5.textContent);
+        let num16=Number(num1_6.textContent);
+        let num26=Number(num2_6.textContent);
+        let num17=Number(num1_7.textContent);
+        let num27=Number(num2_7.textContent);
+        let num18=Number(num1_8.textContent);
+        let num28=Number(num2_8.textContent);
+        let num19=Number(num1_9.textContent);
+        let num29=Number(num2_9.textContent);
+        let num30=Number(num1_10.textContent);
+        let num40=Number(num2_10.textContent);
+        let num31=Number(num1_11.textContent);
+        let num41=Number(num2_11.textContent);
+        let num32=Number(num1_12.textContent);
+        let num42=Number(num2_12.textContent);
+        let num33=Number(num1_13.textContent);
+        let num43=Number(num2_13.textContent);
+        let num34=Number(num1_14.textContent);
+        let num44=Number(num2_14.textContent);
+        let num35=Number(num1_15.textContent);
+        let num45=Number(num2_15.textContent);
+        let num36=Number(num1_16.textContent);
+        let num46=Number(num2_16.textContent);
+        let num37=Number(num1_17.textContent);
+        let num47=Number(num2_17.textContent);
+        let num38=Number(num1_18.textContent);
+        let num48=Number(num2_18.textContent);
+        let num39=Number(num1_19.textContent);
+        let num49=Number(num2_19.textContent);
+        let num50=Number(num1_20.textContent);
+        let num60=Number(num2_20.textContent);
+    
+        
+
+
+
+
+        
+        sum_1.textContent=sum(num11,num21)
+        sum_2.textContent = sum(num12,num22)
+        sum_3.textContent=sum(num13,num23)
+        sum_4.textContent = sum(num14,num24)
+        sum_5.textContent=sum(num15,num25)
+        sum_6.textContent = sum(num16,num26)
+        sum_7.textContent=sum(num17,num27)
+        sum_8.textContent = sum(num18,num28)
+        sum_9.textContent=sum(num19,num29)
+        sum_10.textContent = sum(num30,num40)
+        sum_11.textContent=sum(num31,num41)
+        sum_12.textContent = sum(num32,num42)
+        sum_13.textContent=sum(num33,num43)
+        sum_14.textContent = sum(num34,num44)
+        sum_15.textContent=sum(num35,num45)
+        sum_16.textContent = sum(num36,num46)
+        sum_17.textContent=sum(num37,num47)
+        sum_18.textContent = sum(num38,num48)
+        sum_19.textContent=sum(num39,num49)
+        sum_20.textContent = sum(num50,num60)
+        function sum(a,b){
+            return a+b
+        }
+</script>
+
+</body>
+</html>

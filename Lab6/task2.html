@@ -1,0 +1,117 @@
+<!doctype html>
+<head>
+</head>
+<body>
+        <form name="Calculator" class="form">
+            <div class="container">
+                <label for="value1"><b>No 1</b></label>
+                <input type="text" name="n1"  placeholder="Enter 1st no.">
+                <br>
+
+                <label for="value2"><b>No 2</b></label>
+                <input type="text" name="n2" placeholder="Enter 2nd no.">
+                <br>
+                
+                <label for="result"><b>Result</b></label>
+                <input type="text" name="result" id="result" placeholder="Answer">
+                <br>
+                <br>
+                <input style="border: none; border-radius: 2px;" type="button" name="add" value="Add" onclick="sum();" > &nbsp &nbsp
+                <input style="border: none; border-radius: 2px;" type="button" name="subt" value="Sub" onclick="sub();" > &nbsp &nbsp
+                <input style="border: none; border-radius: 2px;" type="button" name="mult" value="Mul" onclick="mul();" > &nbsp &nbsp
+                <input style="border: none; border-radius: 2px;" type="button" name="divi" value="Div" onclick="div();" > &nbsp &nbsp
+            </div>
+        </form>
+        <script type="text/javascript">
+var v1, v2;
+function check(){
+    var s1 = document.Calculator.n1.value;
+    if(s1.length==0)
+	     alert("Empty feild or Invalid value, Enter again.");
+    
+    var cond;
+    for (var i = 0; i < s1.length; i++) {
+        if(s1.charAt(i)>='0' && s1.charAt(i)<='9')
+          cond=true;
+        else
+            cond=false;
+    }
+
+    if(cond==true){
+        v1 = parseInt(s1);
+    }
+    else
+         alert("Empty feild or Invalid value, Enter again.");
+
+    var s2 = document.Calculator.n2.value;
+    if(s2.length==0)
+         alert("Empty feild or Invalid value, Enter again.");
+
+    var cond1;
+    for (var i = 0; i < s2.length; i++) {
+        if(s2.charAt(i)>='0' && s2.charAt(i)<='9')
+          cond1=true;
+        else
+          cond1=false;
+    }
+
+    if(cond1==true){
+        v2 = parseInt(s2);
+    }
+
+    if(cond1==false)
+        alert("Empty feild or Invalid value, Enter again.");
+
+    if(cond==true && cond1==true)
+        return true;
+    else
+        return false;
+}
+
+function sum() {   
+   
+    if(check()){
+    var add = v1 + v2;
+    document.getElementById("result").value = add;
+    }
+    else{
+    document.getElementById("result").value = "";
+    }
+}
+
+function sub() {   
+   
+    if(check()){
+    var subt = v1 - v2;
+    document.getElementById("result").value = subt;
+    }
+    else{
+     document.getElementById("result").value = "";
+    }
+}
+
+function mul() {   
+   
+    if(check()){
+    var mult = v1 * v2;
+    document.getElementById("result").value = mult;
+    }
+    else{
+    document.getElementById("result").value = "";
+    }
+}
+
+function div() {   
+   
+    if(check()){
+    var  divi = v1 / v2;
+    document.getElementById("result").value = divi;
+    }
+    else{
+    document.getElementById("result").value = "";
+    }
+} 
+
+</script>
+</body>
+</html>
